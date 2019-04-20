@@ -1,0 +1,10 @@
+Borrar varias palabras
+  [n]dw
+
+Rehacer
+  <Ctrl-r>
+
+Cambiar el resto de la línea
+ c$
+
+x // borrar un carácter
