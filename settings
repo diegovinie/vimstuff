@@ -1,0 +1,36 @@
+
+Números de línea
+
+Mostrar/ocultar los números de línea:
+	set number/nonumber, set nu/nonu
+
+Cambiar el ancho de los números de línea:
+	set numberwidth=3
+
+Asignar el número de espacios al tabulador:
+	set tabstop=2
+
+
+Búsquedas
+  :set [opcion]
+  hlsearch [hls] | nohlsearch // marca todas las coincidencias
+  incsearch [ic] | noincsearch // va ubicando la palabra mientras escribe
+
+Indentación
+  :set tabstop=8 // largo de la tabulación
+  :set expandtab
+  :set shiftwidth=4 // tamaño de la indentación
+  :set autoindent // mantener la tabulación
+  :set smartindent
+
+
+Carácteres especiales:
+
+Activar / desactivar:
+	set list / set nolist
+
+solo mostrar una línea:
+	list
+
+cambiar los carácteres:
+	set listchars+=eol:¬,tab:»→
