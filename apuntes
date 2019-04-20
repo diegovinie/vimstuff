@@ -1,0 +1,111 @@
+vimtutor
+
+Borrar varias palabras
+  [n]dw
+
+Rehacer
+  <Ctrl-r>
+
+Cambiar el resto de la línea
+ c$
+
+Reemplazar búsquedas
+  :[%]s/palabra/[mod]
+  % para buscar en todo el documento
+  mod: g global en la línea, i ignorar mayúsculas, c confirmar
+
+
+------------------------------
+https://www.ynonperek.com/2017/08/17/level-up-vim/
+
+Back To Last Edit (Automatic Marks)
+  m<id> // para crear una marca
+  '<id> // para ir a la marca
+  '. // para ir al último cambio
+  ``<id> // para ir al sitio exacto
+  Crtl-O y Crtl-I para navegar en el jumplist
+
+Bulk insert
+  Ctrl-v // visual block
+  h j k l // para expandir el bloque
+  I // empezar a introducir en todas las líneas
+  d // para borrar la selección
+  c // para poner texto borrando las palabras seleccionadas
+  ejem: <Ctrl-v>jjjI# <esc>
+
+Editing Multiple Files
+  :e <filename>
+  :bd // cerrar el buffer actual
+  :b <bufferid> // ir a buffer
+  :bn[bp] // moverse entre buffers
+
+------------------------------
+** apuntesvim **
+------------------------------
+
+https://www.cs.swarthmore.edu/help/vim/completion.html
+
+Completación de palabras y línea
+
+  <Ctrl-n> o <Ctrl-p> // para completar palabras
+  <Ctrl-x><Ctrl-l> // completar línea
+
+Comandos en insert mode (o en command line)
+  <Ctrl-w> // borrar palabra hacia atrás
+  <Ctrl-u> // borrar línea hacia atrás
+
+Visual mode
+  V // líneas
+  v // rango
+  <Ctrl-v> // columnas
+  gv // reseleccionar bloque
+
+Ventanas
+  [n]<Crtl-w>+ // aumenta [n] líneas a la ventana actual
+  <Ctrl-w>= // iguala en tamaño todas las ventanas
+  :only // conserva solo esta ventana visible
+  :hide // ocultar buffer actual
+  :ls // listar buffers
+  :b [n] // abrir buffer [n] en la ventana actual
+
+Moverse entre ventanas:
+	Ctrl-W + [teclas de cursores]
+
+
+	Ctrl-W + n (divide horizontalmente)
+
+Cerrar una ventana:
+	Ctrl-W + c (se pierden los datos no guardados)
+
+Rotar ventanas:
+	Ctrl-W + r (las cambia de posición)
+
+
+Split:
+
+Dividir la ventana mostrando el mismo documento:
+	split / vsplit
+
+Dividir con un documento nuevo:
+	split [nombre del documento]
+
+Abrir un archivo en una ventana nueva:
+	split [ruta/archivo]
+Leer la entrada estándar
+  $ (comando) | vim -
+
+
+  mover línea en insert
+    <Ctrl-t> , <Ctrl-d>
+  en visual
+    > < para mover según sw y . para repetir
+
+
+envolver texto:
+
+Para crear un envoltorio:
+	zf
+
+Para abrir / cerrar:
+	zo / zc
+	nnoremap <space> za // usar <space> para abrir y cerrar folds
