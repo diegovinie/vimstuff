@@ -1,0 +1,15 @@
+Tabs:
+
+Crear tab:
+	:tabnew
+	:tabnew archivo
+
+Cerrar tab:
+	:tabclose
+
+Moverse entre tabs:
+	:tabn | :tabp
+  gt | gT
+
+Listar tabs:
+	:tabs
