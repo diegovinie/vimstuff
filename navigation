@@ -1,0 +1,15 @@
+Desplazamiento
+  h j k l // <Left> <Down> <Up> <Right>
+  <Ctrl-u> <Ctrl-d> // <PageUp> <PageDown>
+  0 // columna 0
+  ^ // primer carácter
+  $ // fin de línea
+  w | W // próximo inicio de palabra | palabra especial
+  e | E // fin de la palabra | palabra especial
+  b | B // inicio de la palabra | palabra especial
+
+Buscar letra:
+  f[letra]
+
+gg // principio del documento
+G  // fin del documento
